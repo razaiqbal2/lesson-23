@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>eval in JS</h1>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+<script>
+    var x=10;
+    var b = 2;
+    var c = 30;
+    var sum = x=c;
+    var diff = c-x;
+    var qou = x/b;
+    var prod= b*c;
+    document.getElementById("p1").innerHTML=eval(sum);
+      document.getElementById("p2").innerHTML =eval(diff);
+        document.getElementById("p3").innerHTML =eval(qou);
+          document.getElementById("p4").innerHTML =eval(prod);
+</script>
+</body>
+</html>
