@@ -15,11 +15,12 @@
     <script>
         var num=[20,4,9,32,1];
         document.getElementById("p1").innerHTML=num;
-        function asecending(){
+       
+      function asecending(){
             num.sort(function(a,b){return a-b});
             document.getElementById("p2").innerHTML=num;
-        }
-        function decending(){
+        }  
+         function decending(){
             num.sort(function (a,b) { return b-a });
             document.getElementById("p3").innerHTML=num;
         }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><i>project</i></h1>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <p id="p6"></p>
+    <button onclick="asecending()">Ascending</button>
+    <button onclick="decending()">Dsecending</button>
+    <button onclick="other()">other</button>
+    <script> 
+     var num = [20, 4, 9, 32, 1];
+        document.getElementById("p1").innerHTML = num;
+
+        function asecending() {
+            num.sort(function (a, b) { return a - b });
+            document.getElementById("p2").innerHTML = num;
+        }
+        function decending() {
+            num.sort(function (a, b) { return b - a });
+            document.getElementById("p3").innerHTML = num;
+        } 
+
+         var num = [20, 10, 80, 2, 1];
+            var newarr =num.map(prod);
+            document.getElementById("p4").innerHTML = num;
+            document.getElementById("p5").innerHTML = newarr;
+             function other() {
+                    num.sort(function (a, b) { return b - a });
+                    document.getElementById("p6").innerHTML = newarr=num;
+                } 
+    
+    
+            
+    </script>
+</body>
+</html>
